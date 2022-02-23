@@ -1,5 +1,5 @@
 # SimpleGameBoard
- This is a Three Musketeers game with a 5 x 5 board.
+ This is a **Three Musketeers game** with a **5 x 5** board.
 ## Roles: Musketeer vs. Guard
 ## Rules:
 1. If the 3 musketeers are in the same row or column, the Guard wins!
