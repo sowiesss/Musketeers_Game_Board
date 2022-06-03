@@ -178,7 +178,7 @@ public class Board {
      * Get all the possible cells that have pieces that can be moved this turn.
      * @return      Cells that can be moved from the given cells
      */
-    public List<Cell> getPossibleCells() { // TODO
+    public List<Cell> getPossibleCells() { 
     	List<Cell> candidates;
     	ArrayList<Cell> result = new ArrayList<>();
     	
@@ -200,7 +200,7 @@ public class Board {
      * @param fromCell The cell that has the piece that is going to be moved
      * @return List of cells that are possible to get to
      */
-    public List<Cell> getPossibleDestinations(Cell fromCell) { // TODO
+    public List<Cell> getPossibleDestinations(Cell fromCell) { 
     	List<Cell> result = new ArrayList<>();
     	
     	if(!fromCell.hasPiece()) // empty cell
@@ -233,7 +233,7 @@ public class Board {
      * Get all the possible moves that can be made this turn.
      * @return List of moves that can be made this turn
      */
-    public List<Move> getPossibleMoves() { // TODO
+    public List<Move> getPossibleMoves() { 
     	List<Cell> cells = getPossibleCells();
     	ArrayList<Move> re = new ArrayList<>();
     	
@@ -251,7 +251,7 @@ public class Board {
      * Checks if the game is over and sets the winner if there is one.
      * @return True, if the game is over, false otherwise.
      */
-    public boolean isGameOver() throws IllegalStateException { // TODO
+    public boolean isGameOver() throws IllegalStateException { 
     	// first check if guard win
     	List<Cell> musks =  getMusketeerCells();
     	if(musks.size() != 3) 
